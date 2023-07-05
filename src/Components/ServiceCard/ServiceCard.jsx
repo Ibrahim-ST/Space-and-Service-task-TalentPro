@@ -4,7 +4,7 @@ import React from 'react';
 import { FaArrowRight } from "react-icons/fa";
 
 const ServiceCard = ({service}) => {
-    const {image, title, description} = service
+    const {image, title, description} = service;
     
     return (
         <div className='w-48 h-64 relative my-4'>
