@@ -1,10 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client' 
-import Home from './Components/Home/Home.jsx'
+import Context from './Components/Context/Context.jsx' 
+import HomeByContext from './Components/HomeByContext/HomeByContext.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Home></Home>
+    <Context>
+    <HomeByContext></HomeByContext>
+    </Context>
   </React.StrictMode>,
 )

@@ -3,11 +3,11 @@ import ServiceCard from "../ServiceCard/ServiceCard";
 
 const Home = () => {
   const [services, setServices] = useState(null);
-
   useEffect(() => {
     fetch("https://talent-pro-task-server.vercel.app/data")
       .then((res) => res.json())
-      .then((data) => setServices(data));
+      .then((data) => setServices(data))
+      .catch((error) => console.error(error))
   }, []);
  
   return (
